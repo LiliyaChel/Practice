@@ -26,21 +26,20 @@ namespace ConsoleApp2
             Console.WriteLine(Math.Ceiling(Math.Log(N,2)));
         }
 
-        //TO DO - частичное решение
         static void Task_3()
         {
             int[] nt = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             int[] persones = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             int left = persones[int.Parse(Console.ReadLine())-1];
-            if (left == persones[persones.Length-1] || left == persones[0] || left - persones[0] <= nt[1])
+            if (left == persones[nt[0] -1] || left == persones[0] || left - persones[0] <= nt[1] || persones[nt[0] - 1] - left <= nt[1])
             {
-                Console.WriteLine(persones[persones.Length - 1]-persones[0]);
-                return;
+                Console.WriteLine(persones[nt[0] - 1]-persones[0]);
             }
-            if (left - persones[0] <= persones[persones.Length - 1] - left)
-                Console.WriteLine(persones[persones.Length - 1] - 2 * persones[0] + left);
             else
-                Console.WriteLine(2 * persones[persones.Length - 1] - persones[0] - left);
+            if (left - persones[0] <= persones[nt[0] - 1] - left)
+                Console.WriteLine(persones[nt[0] - 1] - 2 * persones[0] + left);
+            else
+                Console.WriteLine(2 * persones[nt[0] - 1] - persones[0] - left);
         }
     }
 }
