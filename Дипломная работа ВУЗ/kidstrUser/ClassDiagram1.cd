@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="kidstrUser.Models.AddServ">
+    <Position X="2" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAEACAAACAgBQAAAAUAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AddServ.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kidstrUser.Models.AddServOrdr">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgCAAAKAgAAAIAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AddServOrdr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kidstrUser.Models.Age">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAABCAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Age.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kidstrUser.Models.Day">
+    <Position X="11" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAACAAAAAAAAQAAAAAAAAAQAAAAE=</HashCode>
+      <FileName>Models\Day.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kidstrUser.Models.Direction">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAEAAAAACAAAQAAAAEAAAAAAAAEAAAABA=</HashCode>
+      <FileName>Models\Direction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kidstrUser.Models.Employee">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAQAAAAEIEAACAAAQAAAAEAAAgAAAAIAAAAAA=</HashCode>
+      <FileName>Models\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kidstrUser.Models.Guide">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAEAAAACAAAAAAAAAAAAAAAAAAQAAAAE=</HashCode>
+      <FileName>Models\Guide.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kidstrUser.Models.Ordr">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEQUAAE0hASFOIAFgIDCAQWAQgQAAAAEQABAA=</HashCode>
+      <FileName>Models\Ordr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kidstrUser.Models.Price">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAICCQAAAgEAAEQACAAFAAACAQAAAgAAAAAQAAACE=</HashCode>
+      <FileName>Models\Price.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kidstrUser.Models.Service">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAKQAQACFACEACSAAAQAABAGAAAQQQAAEQAAABE=</HashCode>
+      <FileName>Models\Service.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kidstrUser.Models.ServiceAge">
+    <Position X="6.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAABCAAAAAAAAAAAAAAAAAAQAAAAE=</HashCode>
+      <FileName>Models\ServiceAge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kidstrUser.Models.Status">
+    <Position X="3.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAGAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Status.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kidstrUser.Models.Type">
+    <Position X="6.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAFAAAAASAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Type.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kidstrUser.Models.User">
+    <Position X="9.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAGAAAAAgAAAAAAAAAAACAAAQAgAAEAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kidstrUser.CurrentUser">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Functions\CurrentUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kidstrUser.JsonFunc">
+    <Position X="11" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAEAgACAAAAAAAAAAAA=</HashCode>
+      <FileName>Functions\JsonFunc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kidstrUser.Functions.TableFunc">
+    <Position X="11" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAACAA=</HashCode>
+      <FileName>Functions\TableFunc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
