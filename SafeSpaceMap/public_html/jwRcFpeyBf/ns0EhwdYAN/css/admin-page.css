@@ -1,0 +1,26 @@
+td
+{
+  cursor: default;
+}
+
+.checkbox
+{
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.table-btn {
+	margin: 5px;
+}
+
+.deleted, .hidden {
+  display: none;
+}
+
+.auth-container {
+  width: 60%;
+}
+
+.submit-btn {
+	margin-top: 12px;
+}

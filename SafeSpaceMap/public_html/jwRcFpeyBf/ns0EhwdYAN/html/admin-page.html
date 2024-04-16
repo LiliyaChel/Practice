@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Таблица</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="css/admin-page.css">
+</head>
+
+<body>
+  <div class="d-flex justify-content-center">
+    <form id="authForm" class="auth-container action=" method="POST">
+      <h1>Вход в таблицу администратора</h1>
+      <label for="password">Пароль</label>
+      <input type="password" class="form-control" placeholder="Введите пароль" name="password" value="" required />
+      <input type="submit" class="submit-btn btn btn-outline-secondary float-right" value="Войти" />
+    </form>
+  </div>
+  <div class="menu-container hidden">
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Широта</th>
+            <th scope="col">Долгота</th>
+            <th scope="col">Дата</th>
+            <th scope="col">Номер соц. группы</th>
+            <th scope="col">Комментарий</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="dataTable"></tbody>
+      </table>
+    </div>
+    <div class="d-flex justify-content-center">
+      <button type="button" id="saveBtn" class="btn btn-outline-success table-btn">Внести в базу</button>
+      <button type="button" id="deleteBtn" class="btn btn-outline-danger table-btn">Удалить</button>
+    </div>
+    <a href="../../index.php" type="button" class="btn btn-outline-primary">На главную</a>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="../../js/jQuery.js"></script>
+  <script src="js/admin-page.js"></script>
+</body>
+
+</html>

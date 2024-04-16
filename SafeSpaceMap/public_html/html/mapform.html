@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeSpaceMap</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <script src="https://kit.fontawesome.com/a312d6397c.js" crossorigin="anonymous"></script>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/mapform.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+</head>
+
+<body>
+  <?php
+    if ($categoriesData == -1 || $categoriesData == -2 || $categoriesData == -3) {
+      echo '<script>alert("Ошибка: не удалось загрузить данные о соц. группах!\nВозвращаем вас на главную страницу.");window.location.href = "http://k91111f0.bget.ru/index.php";</script>';
+    }
+  ?>
+  <div id="map"></div>
+  <div class="main-container">
+    <header id="header" class="container">
+      <div id="logo" class="pull-left">
+        <a href="../index.php" type="button" class="btn btn-outline-primary">
+          <h1>
+            <i class="circle-icon fas fa-chevron-circle-left pull-left"></i>
+            <div class = "logo-name-container pull-left">
+                <span>SAFESPACE</span>
+                <span>MAP</span>
+            </div>
+            <div class="clearfix"></div>
+          </h1>
+        </a>
+      </div>
+      <div class=" pull-right dropdown">
+        <div class="select">
+          <span class="active-category">Выбрать категорию</span>
+        </div>
+        <input type="hidden" name="categ">
+        <ul class="dropdown-menu">
+          <li id="allGroupsBtn" class="categoryBtn">
+            <span>Все категории</span>
+          </li>
+          <?php 
+            foreach ($categoriesData as $record) {
+                  echo '<li id="group', $record[0], '"  class="categoryBtn"><span>', $record[1], '</span></li>';
+            }
+          ?>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+    </header>
+    <section id="intro">
+      <div class="intro-text">
+        <a class="btn-get-started" href="#open-popup">Добавить метку</a>
+        <div id="open-popup" class="overlay">
+          <div class="popup features text-center section-padding" id="contact">
+            <a class="close-popup" href="#">x</a>
+            <div class="container features-wrapper">
+                <div class="full-width">
+                  <h1 class="arrow">Опишите происшествие</h1>
+                </div>
+            </div>
+            <div id="smallMap"></div>
+            <form id="newMarkForm" class="row">
+                  <select name="groupid" class="features-wrapper">
+                    <option>Выбрать категорию</option>
+                    <?php 
+                        if ($categoriesData == -1 || $categoriesData == -2 || $categoriesData == -3) {
+                            echo '<option>Произошла ошибка: нет данных о категориях</option>';
+                        } else {
+                            foreach ($categoriesData as $record) {
+                                echo '<option value="', $record[0],'">', $record[1], '</option>';
+                            }
+                        }
+                    ?>
+                  </select>
+                  <input type="datetime-local" id="localdate" name="dattim" class="features-wrapper" />
+                <div class="full-width">
+                  <textarea name="cmmnt" placeholder="Происшествие"></textarea>
+                </div>
+                <div class="full-width">
+                    <input type="submit" class="send-btn" value="Добавить" />
+                </div>
+            </form>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="../js/jQuery.js"></script>
+  <script src="https://maps.api.2gis.ru/2.0/loader.js"></script>
+  <script src="https://maps.api.2gis.ru/2.0/cluster_realworld.js"></script>
+  <script src="../js/mapform.js"></script>
+</body>
+
+</html>
